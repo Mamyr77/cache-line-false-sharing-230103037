@@ -144,7 +144,7 @@ def run_kernel_benchmark(kernel_fn, stride: int, ctx: dict):
             except OSError:
                 pass
         slot = tid * stride
-        t_seed = (int(base_seed) ^ ((tid + 1) * 0x9E3779B97F4A7C15)) & 0xFFFFFFFFFFFFFFFF
+        t_seed = (base_seed + tid + 1) % (2 ** 64)
         barrier.wait()
         kernel_fn(buffer, slot, ITERATIONS_PER_THREAD, np.uint64(t_seed))
 

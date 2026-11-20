@@ -6,7 +6,7 @@
   "instance_seed": "12902023850628446492",
   "num_threads": 4,
   "iterations_per_thread": 60000000,
-  "slowdown_stride1_vs_stride8": 1.043,
+  "slowdown_stride1_vs_stride8": 1.063,
   "llvm_audit": {
     "i64_store_count": 1,
     "pyobject_fallback": false,
@@ -14,37 +14,37 @@
   },
   "benchmarks": {
     "stride_1": {
-      "elapsed_ns": 101532300,
-      "elapsed_ms": 101.532,
-      "ns_per_update": 0.4231,
+      "elapsed_ns": 103481200,
+      "elapsed_ms": 103.481,
+      "ns_per_update": 0.4312,
       "voluntary_csw": 0,
       "involuntary_csw": 0
     },
     "stride_4": {
-      "elapsed_ns": 96053300,
-      "elapsed_ms": 96.053,
-      "ns_per_update": 0.4002,
+      "elapsed_ns": 97139800,
+      "elapsed_ms": 97.14,
+      "ns_per_update": 0.4047,
       "voluntary_csw": 0,
       "involuntary_csw": 0
     },
     "stride_8": {
-      "elapsed_ns": 97304100,
-      "elapsed_ms": 97.304,
-      "ns_per_update": 0.4054,
+      "elapsed_ns": 97356000,
+      "elapsed_ms": 97.356,
+      "ns_per_update": 0.4057,
       "voluntary_csw": 0,
       "involuntary_csw": 0
     },
     "stride_16": {
-      "elapsed_ns": 91772400,
-      "elapsed_ms": 91.772,
-      "ns_per_update": 0.3824,
+      "elapsed_ns": 95180300,
+      "elapsed_ms": 95.18,
+      "ns_per_update": 0.3966,
       "voluntary_csw": 0,
       "involuntary_csw": 0
     },
     "private_baseline": {
-      "elapsed_ns": 91514900,
-      "elapsed_ms": 91.515,
-      "ns_per_update": 0.3813,
+      "elapsed_ns": 96316800,
+      "elapsed_ms": 96.317,
+      "ns_per_update": 0.4013,
       "voluntary_csw": 0,
       "involuntary_csw": 0
     }
