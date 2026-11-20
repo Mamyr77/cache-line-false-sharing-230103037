@@ -1,0 +1,53 @@
+{
+  "git_username": "Mamyr77",
+  "cpu_signature": "AMD64::Intel64 Family 6 Model 154 Stepping 3, GenuineIntel::12",
+  "logical_cores": 12,
+  "cache_line_size_bytes": 64,
+  "instance_seed": "12902023850628446492",
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "slowdown_stride1_vs_stride8": 1.043,
+  "llvm_audit": {
+    "i64_store_count": 1,
+    "pyobject_fallback": false,
+    "llvm_audit_passed": true
+  },
+  "benchmarks": {
+    "stride_1": {
+      "elapsed_ns": 101532300,
+      "elapsed_ms": 101.532,
+      "ns_per_update": 0.4231,
+      "voluntary_csw": 0,
+      "involuntary_csw": 0
+    },
+    "stride_4": {
+      "elapsed_ns": 96053300,
+      "elapsed_ms": 96.053,
+      "ns_per_update": 0.4002,
+      "voluntary_csw": 0,
+      "involuntary_csw": 0
+    },
+    "stride_8": {
+      "elapsed_ns": 97304100,
+      "elapsed_ms": 97.304,
+      "ns_per_update": 0.4054,
+      "voluntary_csw": 0,
+      "involuntary_csw": 0
+    },
+    "stride_16": {
+      "elapsed_ns": 91772400,
+      "elapsed_ms": 91.772,
+      "ns_per_update": 0.3824,
+      "voluntary_csw": 0,
+      "involuntary_csw": 0
+    },
+    "private_baseline": {
+      "elapsed_ns": 91514900,
+      "elapsed_ms": 91.515,
+      "ns_per_update": 0.3813,
+      "voluntary_csw": 0,
+      "involuntary_csw": 0
+    }
+  },
+  "verification_passed": true
+}
